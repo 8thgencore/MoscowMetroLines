@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    android:background="#88FFFFFF"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:id="@+id/rvBranch">
+
+    <TextView
+        android:id="@+id/tvBranchStation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2.4"
+        android:shadowDy="2.4"
+        android:shadowRadius="0.1"/>
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBranchStation"
+        android:layout_marginTop="6dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
