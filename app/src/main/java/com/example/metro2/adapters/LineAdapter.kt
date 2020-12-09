@@ -35,6 +35,7 @@ class LineAdapter(context: Context, data: List<LineModel>?) :
 
         holder.rvStation.layoutManager = LinearLayoutManager(mContext)
         holder.ivArrow.setOnClickListener { onItemClicked(item) }
+        holder.tvBranchStation.setOnClickListener { onItemClicked(item) }
 
         if (item?.isExpanded!!) {
             holder.rvStation.visibility = View.VISIBLE
